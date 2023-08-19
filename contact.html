@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Nevada, the Battle born State</title>
+
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet" />
+
+        <style>
+            body {
+                background-color: #005a9c;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="header">
+            <img class="starNV" src="./assets/Nevada-Flag-04.svg" alt="banner reading battle born draped over a star, nevada written beneath with a wreath of sagebrush"/>
+            <h1>Welcome to the Battle Born State!</h1>
+        </div>
+        <nav class="navbar responsive" id="myNavBar">
+            <a href="./index.html">Home</a>
+            <div class="drop">
+                <button class="drop-button">Places of Interest
+                    <i>&#9660;</i>
+                </button>
+                    <div class="drop-content">
+                        <a href="./PlacesRenoSparks.html">Reno\Sparks</a>
+                        <a href="./PlacesCarsonCity.html">Carson City</a>
+                        <a href="./PlacesElko.html">Elko</a>
+                    </div>
+            </div>
+            <a href="./contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="NavBarResp()">&#9776;</a>
+        </nav>
+            <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
+            <div class="container">
+                <div class="content">
+                    <div class="contactForm">
+                        <p>Feel free to reach out for more information!</p>
+                        <br />
+                        <form action="#">
+                            <div class="userInputBox">
+                                <input type="text" placeholder="Enter your first name">
+                            </div>
+                            <div class="userInputBox">
+                                <input type="text" placeholder="Enter your last name">
+                            </div>
+                            <div class="userInputBox" >
+                                <input type="email" id="emailInput" placeholder="Enter your email">
+                            </div>
+                            <div class="userInputBox" >
+                                <input type="text" id="verifyEmailInput" placeholder="Verify your email">
+                                <p id="eMess" class="popup"></p>
+                            </div>
+                            <div class="userInputBox textBox1" >
+                                <input type="text" placeholder="Leave me a message">
+                            </div>
+                            <div class="submitButton">
+                                <input type="button" value="Submit" >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <script>
+                function NavBarResp() {
+                    var x = document.getElementById("myNavBar");
+                    if (x.className === "navbar") {
+                      x.className += " responsive";
+                    } else {
+                      x.className = "navbar";
+                    }
+                  }
+                let topButton = document.getElementById("topBtn"); // for getting button function
+                
+                window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button
+
+                function scrollFunction() {
+                    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+                        topButton.style.display = "block";
+                    } else{
+                        topButton.style.display = "none";
+                    }
+                }
+                function toTopFunc() { //button for user to click, scrolling back to the top
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                }
+
+                const emailInput = document.getElementById("emailInput");
+                const verifyEmailInput = document.getElementById("verifyEmailInput");
+                const eMess = document.getElementById("eMess");
+
+                emailInput.addEventListener("input", function() {
+                    if (emailInput.value !== verifyEmailInput.value) {
+                        eMess.textContent = "Your email addresses do not match.";
+                    }else {
+                        eMess.textContent = "";
+                    }
+                });
+                verifyEmailInput.addEventListener("input", function() {
+                    if (emailInput.value !== verifyEmailInput.value) {
+                        eMess.textContent = "Your email addresses do not match.";
+                    }else {
+                        eMess.textContent = "";
+                    }
+                });
+        </script>
+    </body>
+</html>

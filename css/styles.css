@@ -1,0 +1,273 @@
+/*general*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Bitter', serif;
+    color: black;
+    background-color: #FFF;
+}
+.header {
+    display: flex;
+    height: 100px;
+    background-color: #0033a0;
+    color: #FFFFFF;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    position: relative;
+}
+.starNV {
+    display: block;
+    position: relative;
+    float: left;
+    width: 180px;
+    height: auto;
+}
+.bg-img {
+    max-width: 100%;
+    height: auto;
+}
+table, th, td {
+    padding: 1px;
+    border: 1px solid;
+}
+
+/*nav styling*/
+.navbar {
+    overflow:hidden ;
+    background-color: #ffa300;
+}
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 1vw;
+}
+.active {
+    background-color: #00843d;
+    color: white;
+}
+.navbar .icon {
+    display: none;
+}
+.navbar a.active {
+    background-color: #00843d;
+    color: white;
+}
+
+/*navbar drop menu*/
+.drop {
+    float: left;
+    overflow: hidden;
+}
+.drop .drop-button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 1vw;
+    padding: 1vw;
+}
+.navbar a:hover, .drop:hover .drop-button {
+    background-color: black;
+    color: #ffa300;
+}
+.drop-content {
+    display: none;
+    font-size: 1vw;
+    position: absolute;
+    background-color: #ffa300;
+    box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.8);
+    z-index: 1;
+}
+.drop-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding-left: 2.65vw;
+    padding-right: 2.65vw;
+
+}
+.drop-content a:hover {
+    background-color: black;
+}
+.drop:hover .drop-content {
+    display: block;
+}
+
+/*cards*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*contact form*/
+.container {
+    font-size: 1vw;
+    font-weight: bolder;
+    margin: 10%;
+    width: 80%;
+    background: #FFFFFF;
+    color: #0033a0;
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+}
+.container .content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .content .contactForm {
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.contactForm .userInputBox {
+    height: 5vh;
+    width: 100%;
+    margin: 5vw 0px;
+}
+.contactForm .userInputBox input,
+.contactForm .userInputBox textarea {
+    margin: 3vw 0;
+    height: 100%;
+    width: 100%;
+    font-size: 1vw;
+    background: #d7deda;
+    padding: 0px 1vh;
+    resize: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.contactForm .textBox1 {
+    min-height: 350px;
+}
+.contactForm .textBox1 textarea {
+    padding-top: 10px;
+}
+.contactForm .submitButton {
+    display: inline-block;
+    margin-top: 15px;
+}
+.contactForm .submitButton input[type="button"]{
+    color: #FFFFFF;
+    margin-top: 5vh;
+    font-size: 1vw;
+    outline: none;
+    padding: 10px 15px;
+    background: #0033a0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.submitButton input[type="button"]:hover{
+    background: #005a9c;
+}
+
+/*email confirmation*/
+#eMess {
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+}
+.popup {
+    animation: blink 3s linear infinite;
+}
+/*responsiveness*/
+@media screen and (max-width: 800px) {
+    .starNV {
+        display: block;
+        position: relative;
+        float: left;
+    }
+    body {
+        background-color: #005a9c;
+
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar a:not(:first-child), .drop .drop-button{
+        display: none;
+    }
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 1vw;
+      }
+    
+    .card {
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+      padding: 25px 25px 0px 25px;
+      background-color: #d7deda;
+      height: fit-content;
+    }
+}
+@media screen and (max-width: 800px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .drop {float: none;}
+    .navbar.responsive .drop-content {
+        position: relative;
+        background-color: hsl(38, 100%, 66%);
+    }
+    .navbar.responsive .drop .drop-button {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .active {
+        background-color: #00843d;
+        color: white;
+    }
+
+    .navbar a.split {
+        float: left;
+    }
+}
+/*scroll to top function*/
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 99;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    background-color: #00843d;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+}
+#topBtn:hover {
+    background-color: black;
+    color: #ffa300;
+}
