@@ -36,7 +36,6 @@
                     </div>
             </div>
             <a href="./contact.html" class="active">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="NavBarResp()">&#9776;</a>
         </nav>
             <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
             <div class="container">
@@ -69,14 +68,6 @@
                 </div>
             </div>
         <script>
-                function NavBarResp() {
-                    var x = document.getElementById("myNavBar");
-                    if (x.className === "navbar") {
-                      x.className += " responsive";
-                    } else {
-                      x.className = "navbar";
-                    }
-                  }
                 let topButton = document.getElementById("topBtn"); // for getting button function
                 
                 window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button

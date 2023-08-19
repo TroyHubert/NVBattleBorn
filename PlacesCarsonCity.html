@@ -138,7 +138,6 @@
                     </div>
             </div>
             <a href="./contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="NavBarResp()">&#9776;</a>
         </nav>
             <img class="bg-img" src="./assets/carson-city.jpg" alt="closeup shot of an official brown brick state building with white pylons. State and United States flags flapping in the wind."/> <a href="https://www.expedia.com/Carson-City.dx6054194?gallery-dialog=gallery-open" target="_blank" style="font-size: xx-small; color: white;">image source</a>
             <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>    
@@ -251,14 +250,6 @@
             </div>
         </div>
         <script>
-                function NavBarResp() {
-                    var x = document.getElementById("myNavBar");
-                    if (x.className === "navbar") {
-                      x.className += " responsive";
-                    } else {
-                      x.className = "navbar";
-                    }
-                  }
                 let topButton = document.getElementById("topBtn"); // for getting button function
                 
                 window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button

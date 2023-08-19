@@ -138,7 +138,6 @@
                     </div>
             </div>
             <a href="./contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="NavBarResp()">&#9776;</a>
         </nav>
             <img class="bg-img" src="./assets/elko.jpg" alt="landscape shot of a sea of sagebrush at the base of a snow blanketed mountain."/> <a href="https://www.srk.com/en/contact-us/elko" target="_blank" style="font-size: xx-small; color: white;">image source</a>
             <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>    
@@ -247,14 +246,6 @@
             </div>
         </div>
         <script>
-                function NavBarResp() {
-                    var x = document.getElementById("myNavBar");
-                    if (x.className === "navbar") {
-                      x.className += " responsive";
-                    } else {
-                      x.className = "navbar";
-                    }
-                  }
                 let topButton = document.getElementById("topBtn"); // for getting button function
                 
                 window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button

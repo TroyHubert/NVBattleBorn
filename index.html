@@ -146,9 +146,8 @@
                     </div>
             </div>
             <a href="./contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="NavBarResp()">&#9776;</a>
         </nav>
-            <img class="bg-img" src="./assets/washoe-valley.jpg" alt="landscape shot of a snow kissed mountain framed by an overcast sky above and autumn red sagebrushes below." /> <a href="https://imgur.com/1gjHFw1" target="_blank" style="font-size: xx-small; color: white;">image source 2</a>
+            <img class="bg-img" src="./assets/washoe-valley.jpg" alt="landscape shot of a snow kissed mountain framed by an overcast sky above and autumn red sagebrushes below." /> <a href="https://imgur.com/1gjHFw1" target="_blank" style="font-size: xx-small; color: white;">image source</a>
                     <div class="row">
                         <div class="column">
                             <section class="card aside">
@@ -232,14 +231,6 @@
                     </div>
                 <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
         <script>
-                function NavBarResp() {
-                    var x = document.getElementById("myNavBar");
-                    if (x.className === "navbar") {
-                      x.className += "responsive";
-                    } else {
-                      x.className = "navbar";
-                    }
-                  }
                 let topButton = document.getElementById("topBtn"); // for getting button function
                 
                 window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button
