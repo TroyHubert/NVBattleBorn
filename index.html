@@ -11,226 +11,124 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 
-        <style>
-    #footer {
-        padding-left: 50px;
-        padding-bottom: 50px;
-        background-color: white;
-            }
-    li {
-        font-style: italic;
-    }
-@media screen and (max-width: 800px ){
-    .navContact {
-        float: left;
-    }
-}
-@media screen and (min-width: 801px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(0%, -110%);
-        height: 100%;
-    }
-    
-}
-@media screen and (min-width: 900px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(0%, -130%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 1100px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(0%, -160%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 1700px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(0%, -180%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 2800px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(0%, -180%);
-        height: 100%;
-    }
-}
-        </style>
     </head>
     <body>
-        <div class="header">
-            <img class="starNV" src="./assets/Nevada-Flag-04.svg" alt="banner reading battle born draped over a star, nevada written beneath with a wreath of sagebrush" /> <!--https://commons.wikimedia.org/wiki/File:Nevada_flag_insignia.svg image source 1-->
-            <h1>Welcome to the Battle Born State!</h1>
-        </div>
-        <nav class="navbar responsive" id="myNavBar">
-            <a href="./index.html" class="active">Home</a>
-            <div class="drop">
-                <button class="drop-button">Places of Interest
-                    <i>&#9660;</i>
-                </button>
-                    <div class="drop-content">
-                        <a href="./PlacesRenoSparks.html">Reno\Sparks</a>
-                        <a href="./PlacesCarsonCity.html">Carson City</a>
-                        <a href="./PlacesElko.html">Elko</a>
-                    </div>
+        <header>
+            <div class="header">
+                <img class="starNV" src="./assets/Nevada-Flag-04.svg" alt="banner reading battle born draped over a star, nevada written beneath with a wreath of sagebrush" />
+                <h1>Welcome to the Battle Born State!</h1>
             </div>
-            <a href="./contact.html">Contact</a>
+        </header>
+        <nav>
+            <div class="navbar responsive" id="myNavBar">
+                <a href="./index.html" class="active">Home</a>
+                <div class="drop">
+                    <button class="drop-button">Places of Interest
+                        <i>&#9660;</i>
+                    </button>
+                        <div class="drop-content">
+                            <a href="./PlacesRenoSparks.html">Reno\Sparks</a>
+                            <a href="./PlacesCarsonCity.html">Carson City</a>
+                            <a href="./PlacesElko.html">Elko</a>
+                        </div>
+                </div>
+                    <a href="./contact.html">Contact</a>
+                    <a href="javascript:void(0);" style="font-size: 1vw;" class="icon" onclick="NavBarResp()">&#9776;</a>
+            </div>
         </nav>
-            <img class="bg-img" src="./assets/washoe-valley.jpg" alt="landscape shot of a snow kissed mountain framed by an overcast sky above and autumn red sagebrushes below." /> <a href="https://imgur.com/1gjHFw1" target="_blank" style="font-size: xx-small; color: white;">image source</a>
-                    <div class="row">
-                        <div class="column">
-                            <section class="card aside">
-                            <h2 style="text-align: center;">The Draw</h2>
-                            <br />
+        <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
+            <div class="img-container">
+                <img class="bg-img" src="./assets/washoe-valley.jpg" alt="landscape shot of a snow kissed mountain framed by an overcast sky above and autumn red sagebrushes below." /><a href="https://imgur.com/1gjHFw1" target="_blank" style="font-size: 0.667vw;">image source</a>
+                    <section>
+                        <div class="textSlide">
+                            <h2>The Draw</h2>
                             <hr />
-                            <br />
                             <ul style="list-style-type: circle;">
+                                <br />
                                 <li><strong><u>No State Income Tax</u></strong></li>
-                                    <p>One of the only states in the US to not have a state income tax.</p>
-                                    <p>Businesses and their staff have relocated in droves. Since 2010, Nevada has grown by over 15%!<a href="https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/nevada/#:~:text=Nevada's%20population%20increased%2011%20out,average%20of%201.4%25%20per%20year." target="_blank"><sup>3</sup></a></p>
                                     <br />
+                                    <p>One of the only states in the US to not have a state income tax.</p>
+                                    <p>Businesses and their staff have relocated in droves.</p> 
+                                    <p>Since 2010, Nevada has grown by over 15%!<a href="https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/nevada/#:~:text=Nevada's%20population%20increased%2011%20out,average%20of%201.4%25%20per%20year." target="_blank"><sup>3</sup></a></p></p>    
+                                    <br />
+
                                 <li><strong><u>Mining</u></strong></li>
+                                    <br />
                                     <p>Considered one of the most important states for mining gold and silver.</p>
                                     <p>Home of the <a href="https://www.rockngem.com/nevadas-carlin-trend/" target="_blank">Carlin Trend</a>, one of the world's largest districts for mining gold.</p>
                                     <br />
+
                                 <li><strong><u>It's Only Natural</u></strong></li>
+                                    <br />
                                     <p>A lesser known factoid is how mountainous the state of Nevada is; it's actually in the top 10 states with a high elevation.</p>
-                                    <p>From its hiking trails, to its photogenic scenery and sunsets; Nevada has what it takes to keep the great outdoors a short drive away.</p>
+                                    <p>From its hiking trails, to its photogenic scenery and sunsets Nevada has what it takes to keep the great outdoors a short drive away.</p>
                                     <br />
                             </ul>
-                            </section>
                         </div>
-                        
-                        <div class="column">
-                            <article class="card section">
-                            <h2 style="text-align: center;">The Facts</h2>
-                            <br />
+                    </section>
+                    <article>                  
+                        <div class="textSlide">
+                            <h2>The Facts</h2>
                             <hr />
-                            <br />
                             <ul style="list-style-type: circle;">
+                                <br />
                                 <li><strong><u>Roots in Spain and Mexico</u></strong></li>
+                                <br />
                                     <p>First claimed by Spaniards in the 1500's, ownership fell under Mexico after they gained independence in 1821.<a href="https://kids.nationalgeographic.com/geography/states/article/nevada#:~:text=The%20area%20was%20claimed%20by,States%20took%20over%20the%20area." target="_blank"><sup>4</sup></a></p>
                                     <p>The United States secured the land from Mexico in 1848, during the Mexican-American war.<a href="https://kids.nationalgeographic.com/geography/states/article/nevada#:~:text=The%20area%20was%20claimed%20by,States%20took%20over%20the%20area." target="_blank"><sup>4</sup></a></p>
                                     <br />
                                 <li><strong><u>Gold, Silver, and Blood of Brothers</u></strong></li>
+                                <br />
                                     <p>Four years after the height of the gold rush, silver was discovered in 1858.<a href="https://en.wikipedia.org/wiki/Silver_mining_in_Nevada#:~:text=Silver%20mining%20in%20Nevada%2C%20a,producer%20of%20silver%2C%20after%20Alaska." target="_blank"><sup>5</sup></a></p>
                                     <p>In 1864, during the waning moments of the Civil War, Nevada joined the Union and became the <q><i>Battle Born State</i></q>.<a href="https://jic.nv.gov/About/History_of_Nevada/#:~:text=Nevada%20became%20the%2036th%20state,costliest%20transmission%20ever%20by%20telegraph)." target="_blank"><sup>6</sup></a></p>
                                     <br />
-                                    <li><strong><u>These Colors Don't Bleed</u></strong></li>
+                                <li><strong><u>These Colors Don't Bleed</u></strong></li>
+                                <br />
                                     <p>The state flag features one primary color and 3 contrasting, dynamic, and supporting colors.</p>
                                     <p>Blue, White, Gold, and Green respectively stand for vigilance, loyalty and justice, wealth and generosity, and earth and fertility.<a href="https://www.flagcolorcodes.com/nevada" target="_blank"><sup>7</sup></a></p>
-                                    <br />
                             </ul>
-                            </article>
                         </div>
+                    </article>
+                    <aside>            
+                        <div class="textSlide">
+                            <h2>The Fun</h2>
+                            <hr />
+                            <ul style="list-style-type: circle;">
+                                <br />
+                                <li><strong><u>Ridin' Birdie</u></strong></li>
+                                    <br />
+                                    <p>With it's year round warm climate, Nevada is home to 70 golf courses: some of which are TPC facilities visited on PGA tours.</p>
+                                    <br />
+                                <li><strong><u>Keeping Things Blue</u></strong></li>
+                                    <br />
+                                    <p>After appreciating the view, bathing in the sun, and the humble mountain town vibes; Spend a summer night watching Shakespeare performed on a <a href="https://laketahoeshakespeare.com/" target="_blank">lakeside theater</a>.</p>
+                                    <br />
+                                <li><strong><u>Bustling Night Life</u></strong></li>
+                                    <br />
+                                    <p>From illustrious gaming resorts to an emergent art scene, Nevada has much to offer. When you're done, book a night at one of many 4 and 5 star hotels and enjoy some incredible cuisine.</p>
+                                    <p>If none of that is a selling point, we have <strong><a href="https://nevadamagazine.com/issue/spring-2023/21549/" target="_blank">All You Can Eat Sushi</a></strong>.</p>
+                            </ul>
+                        </div>
+                    </aside>
+                    <a class="navleft" onclick="plusSlides(-1)">❮</a>
+                    <a class="navright" onclick="plusSlides(1)">❯</a>
+                <div class="bulletContainer">
+                    <span class="bullet" onclick="currentSlide(1)"></span> 
+                    <span class="bullet" onclick="currentSlide(2)"></span> 
+                    <span class="bullet" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>                        
+   
 
-                        <div class="column">
-                            <aside class="card article">
-                                <h2 style="text-align: center;">The Fun</h2>
-                                <br />
-                                <hr />
-                                <br />
-                                <ul style="list-style-type: circle;">
-                                    <li><strong><u>Ridin' Birdie</u></strong></li>
-                                        <p>With it's year round warm climate, Nevada is home to 70 golf courses: some of which are TPC facilities visited on PGA tours.</p>
-                                        <br />
-                                    <li><strong><u>Keeping Things Blue</u></strong></li>
-                                        <p>After appreciating the view, bathing in the sun, and the humble mountain town vibes; Spend a summer night watching Shakespeare performed on a <a href="https://laketahoeshakespeare.com/" target="_blank">lakeside theater</a>.</p>
-                                        <br />
-                                    <li><strong><u>Bustling Night Life</u></strong></li>
-                                        <p>From illustrious gaming resorts to an emergent art scene, Nevada has much to offer. When you're done, book a night at one of many 4 and 5 star hotels and enjoy some incredible cuisine.</p>
-                                        <p>If none of that is a selling point, we have <strong><a href="https://nevadamagazine.com/issue/spring-2023/21549/" target="_blank">All You Can Eat Sushi</a></strong>.</p>
-                                        <br />
-    
-                                </ul>
-                            </aside>
-                        </div>
-                    </div>
-                    <div id="footer">
-                        <p>References</p>
-                        <ol>
-                            <li>Nevada Insignia. Public Domain. From <a href="https://commons.wikimedia.org/wiki/File:Nevada_flag_insignia.svg" target="_blank">Nevada Flag</a></li>
-                            <li>Washoe Valley, NV (2016) From <a href="https://imgur.com/1gjHFw1" target="_blank">Imgur - Psilogod</a></li>
-                            <li>Nevada Population Growth Since 2010-2021 <a href="https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/nevada/#:~:text=Nevada's%20population%20increased%2011%20out,average%20of%201.4%25%20per%20year." target="_blank">USAFacts</a></li>
-                            <li>Nevada History<a href="https://kids.nationalgeographic.com/geography/states/article/nevada#:~:text=The%20area%20was%20claimed%20by,States%20took%20over%20the%20area." target="_blank">Nat Geo: Kids</a></li>
-                            <li>Discovery of the Comstock Load <a href="https://en.wikipedia.org/wiki/Silver_mining_in_Nevada#:~:text=Silver%20mining%20in%20Nevada%2C%20a,producer%20of%20silver%2C%20after%20Alaska." target="_blank">Wikipedia</a></li>
-                            <li>History of Nevada <a href="https://jic.nv.gov/About/History_of_Nevada/#:~:text=Nevada%20became%20the%2036th%20state,costliest%20transmission%20ever%20by%20telegraph)." target="_blank">jic.nv.gov</a></li>
-                            <li>Meaning of Colors for Nevada Flag<a href="https://www.flagcolorcodes.com/nevada" target="_blank">Flag Color Codes</a></li>
-                        </ol>
-                    </div>
-                <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
         <script>
+                function NavBarResp() {
+                    var x = document.getElementById("myNavBar");
+                    if (x.className === "navbar") {
+                      x.className += " responsive";
+                    } else {
+                      x.className = "navbar";
+                    }
+                  }
                 let topButton = document.getElementById("topBtn"); // for getting button function
                 
                 window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button
@@ -246,6 +144,52 @@
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
                 }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("textSlide");
+                var dots = document.getElementsByClassName("bullet");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+}
         </script>
+
     </body>
+
+    <footer >
+
+        <div id="footer">
+            <p>References</p>
+                <ol>
+                    <li>Nevada Insignia. Public Domain. From <a href="https://commons.wikimedia.org/wiki/File:Nevada_flag_insignia.svg" target="_blank">Nevada Flag</a></li>
+                    <li>Washoe Valley, NV (2016) From <a href="https://imgur.com/1gjHFw1" target="_blank">Imgur - Psilogod</a></li>
+                    <li>Nevada Population Growth Since 2010-2021 <a href="https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/nevada/#:~:text=Nevada's%20population%20increased%2011%20out,average%20of%201.4%25%20per%20year." target="_blank">USAFacts</a></li>
+                    <li>Nevada History<a href="https://kids.nationalgeographic.com/geography/states/article/nevada#:~:text=The%20area%20was%20claimed%20by,States%20took%20over%20the%20area." target="_blank">Nat Geo: Kids</a></li>
+                    <li>Discovery of the Comstock Load <a href="https://en.wikipedia.org/wiki/Silver_mining_in_Nevada#:~:text=Silver%20mining%20in%20Nevada%2C%20a,producer%20of%20silver%2C%20after%20Alaska." target="_blank">Wikipedia</a></li>
+                    <li>History of Nevada <a href="https://jic.nv.gov/About/History_of_Nevada/#:~:text=Nevada%20became%20the%2036th%20state,costliest%20transmission%20ever%20by%20telegraph)." target="_blank">jic.nv.gov</a></li>
+                    <li>Meaning of Colors for Nevada Flag<a href="https://www.flagcolorcodes.com/nevada" target="_blank">Flag Color Codes</a></li>
+                </ol>
+        </div>
+
+    </footer>
+
 </html>

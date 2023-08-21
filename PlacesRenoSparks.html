@@ -11,260 +11,217 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 
-        <style>
-    #footer {
-        padding-left: 50px;
-        padding-bottom: 50px;
-        background-color: white;
-            }
-    li {
-        font-style: italic;
-    }
-@media screen and (min-width: 801px){
-    .row {
-        display: flex;
-    }
-    .column {
-        width: 50%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: .5vw;
-        transform: translate(0%, -120%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 900px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(1%, -130%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 1100px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(1%, -150%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 1700px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(1%, -170%);
-        height: 100%;
-    }
-}
-@media screen and (min-width: 2800px){
-    .row {
-        display: flex;
-    }
-    .column {
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 2.0%;
-        margin-right: 0.5%;
-    }
-    .card {
-        background-color: hwb(146 84% 13% / 0.9);
-        border: .1vw solid black;
-        padding: 1rem 1rem 0rem 2rem;
-        font-size: 1vw;
-        transform: translate(1%, -170%);
-        height: 100%;
-    }
-}
-        </style>
+
+
     </head>
     <body>
-        <div class="header">
-            <img class="starNV" src="./assets/Nevada-Flag-04.svg" alt="banner reading battle born draped over a star, nevada written beneath with a wreath of sagebrush"/>
-            <h1>Welcome to the Battle Born State!</h1>
-        </div>
-        <nav class="navbar responsive" id="myNavBar">
-            <a href="./index.html">Home</a>
-            <div class="drop">
-                <button class="drop-button">Places of Interest
-                    <i>&#9660;</i>
-                </button>
-                    <div class="drop-content">
-                        <a href="./PlacesRenoSparks.html" class="active">Reno\Sparks</a>
-                        <a href="./PlacesCarsonCity.html">Carson City</a>
-                        <a href="./PlacesElko.html">Elko</a>
-                    </div>
+        <header>
+            <div class="header">
+                <img class="starNV" src="./assets/Nevada-Flag-04.svg" alt="banner reading battle born draped over a star, nevada written beneath with a wreath of sagebrush"/>
+                <h1>Welcome to the Battle Born State!</h1>
             </div>
-            <a href="./contact.html">Contact</a>
+        </header>
+        <nav>
+            <div class="navbar responsive" id="myNavBar">
+                <a href="./index.html">Home</a>
+                <div class="drop">
+                    <button class="drop-button">Places of Interest
+                        <i>&#9660;</i>
+                    </button>
+                        <div class="drop-content">
+                            <a href="./PlacesRenoSparks.html" class="active">Reno\Sparks</a>
+                            <a href="./PlacesCarsonCity.html">Carson City</a>
+                            <a href="./PlacesElko.html">Elko</a>
+                        </div>
+                    </div>
+                    <a href="./contact.html">Contact</a>
+                    <a href="javascript:void(0);" style="font-size: 1vw;" class="icon" onclick="NavBarResp()">&#9776;</a>
+            </div>
         </nav>
-            <img class="bg-img" src="./assets/reno-twilight.jpg" alt="Landscape shot of Downtown Reno, with the Reno Tahoe International airport visible in the distance."/> <a href="https://www.nationalgeographic.com/travel/article/fast-facts-23" target="_blank" style="font-size: xx-small; color: white;">image source</a>
-            <div class="row">
-                <div class="column">
-                    <div class="card aside">
-                    <h2 style="text-align: center;">College\Tech\Blue Collar Town</h2>
-                    <hr />
-                    <p style="text-align: center;"></p>
-                    <ul style="list-style-type: circle;">
-                        <li><strong><u><a href="https://www.unr.edu/planetarium" target="_blank">Milky Way Appreciation</a></u></strong></li>
-                            <p>With a full-dome theater, you can view the stars in an immersive visual and audio experience. Visit for a rotating catalog of exhibits from science-fiction's impact on culture, a timeline of every space mission, and vision casting for the future of space travel.</p>
-                            <br />
-                        <li><strong><u><a href="https://automuseum.org/" target="_blank">Classic cars, fictional hot rods, and educational programs</a></u></strong></li>
-                            <p>Reno and Sparks is home to many car enthusiasts, learn the history of America's classic cars both real and fictional. The A-Team van, Delorean, and Jurassic Park tour suv have found a home to met in person.</p>
-                        <li><strong><u><a href="https://nvdm.org/" target="_blank">Discovery Comes in All Shapes and Sizes</a></u></strong></li>
-                            <p>Kinetic energy, physics, dinosaurs, space, and wildlife can all be interacted with in this science driven kids museum. Party after hours or have a sleepover!</p>
-                    </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card section">
-                    <h2 style="text-align: center;">Metrics</h2>
-                    <hr />
-                    <div>
-                        <p>Reno and Sparks were incorporated in 1903<a href="https://en.wikipedia.org/wiki/Reno,_Nevada" target="_blank"><sup>9</sup></a> and 1905<a href="https://en.wikipedia.org/wiki/Sparks,_Nevada" target="_blank"><sup>10</sup></a>. Sparks is a suburb<a href="https://www.niche.com/places-to-live/sparks-washoe-nv/"><sup>11</sup></a> of Reno<a href="https://www.niche.com/places-to-live/reno-washoe-nv/"><sup>12</sup></a>.</p>
-                        <p>Both are respectively nestled on the eastern slopes of the Sierra Nevada Mountain range in an area called Truckee Meadows<a href="https://www.reno.gov/community/about-reno" target="_blank"><sup>13</sup></a>.</p>
-                        <p>Reno, is home to the University of Nevada, Reno.</p>
-                        <table>
-                            <tr>
-                                <th>City, State</th>
-                                <th>Population (2022)</th>
-                                <th>City Individual Median Income (2021)</th>
-                                <th>State Individual Median Income (2021)</th>
-                            </tr>
-                            <tr style="background-color: #00843d; color:white">
-                                <td>Reno, NV<a href="https://www.census.gov/quickfacts/fact/table/renocitynevada/PST045222" target="_blank"><sup>14</sup></a></td>
-                                <td>268,851</td>
-                                <td>$39,104</td>
-                                <td>$34,621</td>
-                            </tr>
-                            <tr>
-                                <td>Chico, CA<a href="https://www.census.gov/quickfacts/fact/table/chicocitycalifornia/PST045222" target="_blank"><sup>15</sup></a></td>
-                                <td>102,338</td>
-                                <td>$26,335</td>
-                                <td>$41,276</td>
-                            </tr>
-                            <tr>
-                                <td>Eugene, OR<a href="https://www.census.gov/quickfacts/fact/table/eugenecityoregon/PST045222" target="_blank"><sup>16</sup></a></td>
-                                <td>175,096</td>
-                                <td>$35,536</td>
-                                <td>$37,816</td>
-                            </tr>
-                            <tr>
-                                <td>Provo, UT<a href="https://www.census.gov/quickfacts/fact/table/provocityutah/PST045222" target="_blank"><sup>17</sup></a></td>
-                                <td>114,084</td>
-                                <td>$23,440</td>
-                                <td>$33,378</td>
-                            </tr>
-                            <tr>
-                                <td>Tucson, AZ<a href="https://www.census.gov/quickfacts/fact/table/tucsoncityarizona/PST045222" target="_blank"><sup>18</sup></a></td>
-                                <td>543,242</td>
-                                <td>$25,272</td>
-                                <td>$34,644</td>
-                            </tr>
-                            <tr>
-                                <td>Moscow, ID<a href="https://www.census.gov/quickfacts/fact/table/moscowcityidaho/LND110210" target="_blank"><sup>19</sup></a></td>
-                                <td>25,850</td>
-                                <td>$28,075</td>
-                                <td>$31,509</td>
-                            </tr>
-                        </table>
-                    </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card article">
-                        <h2 style="text-align: center;">The Biggest Little Events</h2>
+        <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>
+            <div class="img-container">
+                <img class="bg-img" src="./assets/reno-twilight.jpg" alt="Landscape shot of Downtown Reno, with the Reno Tahoe International airport visible in the distance."/> <a href="https://www.nationalgeographic.com/travel/article/fast-facts-23" target="_blank"  style="font-size: 0.667vw;">image source</a>
+                <section>
+                    <div class="textSlide">
+                        <h2>College\Tech\Blue Collar Town</h2>
                         <hr />
-                        <p style="text-align: center;"></p>
                         <ul style="list-style-type: circle;">
-                            <li><strong><u><a href="https://renoballoon.com/" target="_blank">The Great Balloon Race</a></u></strong></li>
-                                <p>Every year in the beginning of September, join the populace for hundreds of hot air balloons.</p>
-                                <p>Hosted at Rancho San Rafael park in the early dawn, there are plenty of options for coffee, cocoa, and tea.</p>
-                            <li><strong><u><a href="https://hotaugustnights.net/" target="_blank">Hot August Nights</a></u></strong></li>
-                                <p>A month long love affair with classic cars, rock 'n' roll, and simpler times.</p>
-                            <li><strong><u><a href="https://nuggetribcookoff.com/" target="_blank">Nugget Rib Cook-off</a></u></strong></li>
-                                <p>Some of the nations best smokers, grillers, and BBQers compete for the best ribs in the nation.</p>
-                                <p>Live music, a bazaar of bizarre crafts, and great food.</p>
+                            <br />
+                            <li><strong><u><a href="https://www.unr.edu/planetarium" target="_blank">Milky Way Appreciation</a></u></strong></li>
+                                <br />
+                                    <p>With a full-dome theater, you can view the stars in an immersive visual and audio experience.</p>
+                                    <p>Visit for a rotating catalog of exhibits from science-fiction's impact on culture, a timeline of every space mission, and vision casting for the future of space travel.</p>
+                                <br />
+                            <li><strong><u><a href="https://automuseum.org/" target="_blank">Classic cars, fictional hot rods, and educational programs</a></u></strong></li>
+                                <br />    
+                                    <p>Reno and Sparks is home to many car enthusiasts, learn the history of America's classic cars both real and fictional.</p>
+                                    <p>A-Team van, Delorean, and Jurassic Park tour suv have found a home to met in person.</p>
+                                <br />
+                            <li><strong><u><a href="https://nvdm.org/" target="_blank">Discovery Comes in All Shapes and Sizes</a></u></strong></li>
+                                <br />    
+                                    <p>Kinetic energy, physics, dinosaurs, space, and wildlife can all be interacted with in this science driven kids museum.</p>
+                                    <p>Party after hours or have a sleepover!</p>
                         </ul>
                     </div>
-                </div>
+                </section>
+                <article>                  
+                    <div class="textSlide">
+                        <h2>Metrics</h2>
+                        <hr />
+                        <div>
+                            <br />
+                            <p>Reno and Sparks were incorporated in 1903<a href="https://en.wikipedia.org/wiki/Reno,_Nevada" target="_blank"><sup>9</sup></a> and 1905<a href="https://en.wikipedia.org/wiki/Sparks,_Nevada" target="_blank"><sup>10</sup></a>.</p>
+                            <p>Sparks is a suburb<a href="https://www.niche.com/places-to-live/sparks-washoe-nv/"><sup>11</sup></a> of Reno<a href="https://www.niche.com/places-to-live/reno-washoe-nv/"><sup>12</sup></a>.</p>
+                            <p>Both are respectively nestled on the eastern slopes of the Sierra Nevada Mountain range in an area called Truckee Meadows<a href="https://www.reno.gov/community/about-reno" target="_blank"><sup>13</sup></a>.</p>
+                            <p>Reno, NV is home to the University of Nevada, Reno.</p>
+                            <br />
+                            <table>
+                                <tr>
+                                    <th>City, State</th>
+                                    <th>Population (2022)</th>
+                                    <th>City Individual Median Income (2021)</th>
+                                    <th>State Individual Median Income (2021)</th>
+                                </tr>
+                                <tr style="background-color: #00843d; color:white">
+                                    <td>Reno, NV<a href="https://www.census.gov/quickfacts/fact/table/renocitynevada/PST045222" target="_blank"><sup>14</sup></a></td>
+                                    <td>268,851</td>
+                                    <td>$39,104</td>
+                                    <td>$34,621</td>
+                                </tr>
+                                <tr>
+                                    <td>Chico, CA<a href="https://www.census.gov/quickfacts/fact/table/chicocitycalifornia/PST045222" target="_blank"><sup>15</sup></a></td>
+                                    <td>102,338</td>
+                                    <td>$26,335</td>
+                                    <td>$41,276</td>
+                                </tr>
+                                <tr>
+                                    <td>Eugene, OR<a href="https://www.census.gov/quickfacts/fact/table/eugenecityoregon/PST045222" target="_blank"><sup>16</sup></a></td>
+                                    <td>175,096</td>
+                                    <td>$35,536</td>
+                                    <td>$37,816</td>
+                                </tr>
+                                <tr>
+                                    <td>Provo, UT<a href="https://www.census.gov/quickfacts/fact/table/provocityutah/PST045222" target="_blank"><sup>17</sup></a></td>
+                                    <td>114,084</td>
+                                    <td>$23,440</td>
+                                    <td>$33,378</td>
+                                </tr>
+                                <tr>
+                                    <td>Tucson, AZ<a href="https://www.census.gov/quickfacts/fact/table/tucsoncityarizona/PST045222" target="_blank"><sup>18</sup></a></td>
+                                    <td>543,242</td>
+                                    <td>$25,272</td>
+                                    <td>$34,644</td>
+                                </tr>
+                                <tr>
+                                    <td>Moscow, ID<a href="https://www.census.gov/quickfacts/fact/table/moscowcityidaho/LND110210" target="_blank"><sup>19</sup></a></td>
+                                    <td>25,850</td>
+                                    <td>$28,075</td>
+                                    <td>$31,509</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </article>    
+                <aside>            
+                    <div class="textSlide">
+                        <h2>The Biggest Little Events</h2>
+                        <hr />
+                        <ul style="list-style-type: circle;">
+                            <br />
+                            <li><strong><u><a href="https://renoballoon.com/" target="_blank">The Great Balloon Race</a></u></strong></li>
+                                <br />
+                                    <p>Every year in the beginning of September, join the populace for hundreds of hot air balloons.</p>
+                                    <p>Hosted at Rancho San Rafael park in the early dawn, there are plenty of options for coffee, cocoa, and tea.</p>
+                                <br />
+                            <li><strong><u><a href="https://hotaugustnights.net/" target="_blank">Hot August Nights</a></u></strong></li>
+                                <br />
+                                    <p>A month long love affair with classic cars, rock 'n' roll, and simpler times.</p>
+                                <br />
+                            <li><strong><u><a href="https://nuggetribcookoff.com/" target="_blank">Nugget Rib Cook-off</a></u></strong></li>
+                                <br />
+                                    <p>Some of the nations best smokers, grillers, and BBQers compete for the best ribs in the nation.</p>
+                                    <p>Live music, a bazaar of bizarre crafts, and great food.</p>
+                        </ul>
+                    </div>
+                </aside>
+                <a class="navleft" onclick="plusSlides(-1)">❮</a>
+                <a class="navright" onclick="plusSlides(1)">❯</a>
+            <div class="bulletContainer">
+                <span class="bullet" onclick="currentSlide(1)"></span> 
+                <span class="bullet" onclick="currentSlide(2)"></span> 
+                <span class="bullet" onclick="currentSlide(3)"></span> 
             </div>
-            <div id="footer">
-                <p>References</p>
-                <ol start="8">
-                    <li>Everything to Know About Reno (2018) photo by Niebrugge Images, Alamy Stock Photo <a href="https://www.nationalgeographic.com/travel/article/fast-facts-23" target="_blank">National Geographic</a></li>
-                    <li>Reno, NV Incorporated <a href="https://en.wikipedia.org/wiki/Reno,_Nevada" target="_blank">wikipedia</a></li>
-                    <li>Sparks, NV Incorporated <a href="https://en.wikipedia.org/wiki/Sparks,_Nevada" target="_blank">wikipedia</a></li>
-                    <li>Sparks, NV City Type<a href="https://www.niche.com/places-to-live/sparks-washoe-nv/" target="_blank">Niche.com</a></li>
-                    <li>Reno, NV City Type<a href="https://www.niche.com/places-to-live/reno-washoe-nv/" target="_blank">Niche.com</a></li>
-                    <li>Reno, NV Regional Location<a href="https://www.reno.gov/community/about-reno" target="_blank">Reno.gov</a></li>
-                    <li>Reno, NV Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/renocitynevada/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                    <li>Chico Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/chicocitycalifornia/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                    <li>Eugene, OR Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/eugenecityoregon/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                    <li>Provo, UT Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/provocityutah/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                    <li>Tucson, AZ Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/tucsoncityarizona/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                    <li>Moscow, ID Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/moscowcityidaho/PST045222" target="_blank">U.S. Census Bureau</a></li>
-                </ol>
-            </div>
-        </div>
-            <button onclick="toTopFunc()" id="topBtn" title="to top">&#9650;</button>   
-        <script>
-                let topButton = document.getElementById("topBtn"); // for getting button function
-                
-                window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button
+        </div>                        
+    <script>
+            function NavBarResp() {
+                var x = document.getElementById("myNavBar");
+                if (x.className === "navbar") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "navbar";
+                }
+              }
+            let topButton = document.getElementById("topBtn"); // for getting button function
+            
+            window.onscroll = function() {scrollFunction()}; // function calls after user scrolls down 150px from the top, showing the button
 
-                function scrollFunction() {
-                    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
-                        topButton.style.display = "block";
-                    } else{
-                        topButton.style.display = "none";
-                    }
+            function scrollFunction() {
+                if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+                    topButton.style.display = "block";
+                } else{
+                    topButton.style.display = "none";
                 }
-                function toTopFunc() { //button for user to click, scrolling back to the top
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-                }
-        </script>
-    </body>
+            }
+            function toTopFunc() { //button for user to click, scrolling back to the top
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+            }
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("textSlide");
+            var dots = document.getElementsByClassName("bullet");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+}
+    </script>
+</body>
+    <footer >
+        <div id="footer">
+            <p>References</p>
+            <ol start="8">
+                <li>Everything to Know About Reno (2018) photo by Niebrugge Images, Alamy Stock Photo <a href="https://www.nationalgeographic.com/travel/article/fast-facts-23" target="_blank">National Geographic</a></li>
+                <li>Reno, NV Incorporated <a href="https://en.wikipedia.org/wiki/Reno,_Nevada" target="_blank">wikipedia</a></li>
+                <li>Sparks, NV Incorporated <a href="https://en.wikipedia.org/wiki/Sparks,_Nevada" target="_blank">wikipedia</a></li>
+                <li>Sparks, NV City Type<a href="https://www.niche.com/places-to-live/sparks-washoe-nv/" target="_blank">Niche.com</a></li>
+                <li>Reno, NV City Type<a href="https://www.niche.com/places-to-live/reno-washoe-nv/" target="_blank">Niche.com</a></li>
+                <li>Reno, NV Regional Location<a href="https://www.reno.gov/community/about-reno" target="_blank">Reno.gov</a></li>
+                <li>Reno, NV Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/renocitynevada/PST045222" target="_blank">U.S. Census Bureau</a></li>
+                <li>Chico Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/chicocitycalifornia/PST045222" target="_blank">U.S. Census Bureau</a></li>
+                <li>Eugene, OR Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/eugenecityoregon/PST045222" target="_blank">U.S. Census Bureau</a></li>
+                <li>Provo, UT Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/provocityutah/PST045222" target="_blank">U.S. Census Bureau</a></li>
+                <li>Tucson, AZ Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/tucsoncityarizona/PST045222" target="_blank">U.S. Census Bureau</a></li>
+                <li>Moscow, ID Population (July 1, 2022) and Income (2021)<a href="https://www.census.gov/quickfacts/fact/table/moscowcityidaho/PST045222" target="_blank">U.S. Census Bureau</a></li>
+            </ol>
+        </div>
+    </footer>
 </html>

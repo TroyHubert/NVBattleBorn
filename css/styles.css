@@ -9,45 +9,119 @@ body {
     color: black;
     background-color: #FFF;
 }
+h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
 .header {
     display: flex;
-    height: 100px;
+    height: 5vh;
     background-color: #0033a0;
     color: #FFFFFF;
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    font-size: 2vw;
+    font-size: 1.25vw;
     position: relative;
 }
 .starNV {
     display: block;
     position: relative;
     float: left;
-    width: 180px;
+    width: 10vh;
     height: auto;
 }
 .bg-img {
     max-width: 100%;
     height: auto;
+    filter: blur(0.1rem);
+    position: relative;
+}
+.img-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+.textSlide {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.1rem solid black;
+    padding: 0.75vw 1vw 0.75vw 3vw;
+    font-size: 1.25vw;
+    display: none;
+    position: absolute;
+    background-color: #d7dedacc;
+}
+.navleft, .navright {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -3rem;
+    padding: 0.5rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0 0.1rem 0.1rem 0;
+    user-select: none;
+    background-color: rgb(255, 163, 0, 0.8);
+}
+.navleft {
+    position: absolute;
+    left: 0;
+}
+.navright {
+    position: absolute;
+    right: 0;
+}
+.navleft:hover, .navright:hover {
+    background-color: rgb(0, 132, 61, 0.8);
+    color: white;
+}
+.bulletContainer {
+    text-align: center;
+    padding: 0.5rem;
+}
+.bullet {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 0.25rem;
+    border: 0.1vw solid white;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #FFF;
 }
 table, th, td {
-    padding: 1px;
-    border: 1px solid;
+    padding: 0.1rem;
+    border: 0.1rem solid;
+}
+#footer {
+    padding-top: 0.1rem;
+    padding-left: 2.5rem;
+    background-color: #FFFFFF;
+    font-size: 0.5rem;
+    font-style: italic;
 }
 
 /*nav styling*/
 .navbar {
-    overflow:hidden ;
+    overflow: hidden ;
     background-color: #ffa300;
 }
 .navbar a {
     float: left;
     color: black;
     text-align: center;
-    padding: 2vw;
+    padding: 1rem;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1rem;
+    display: block;
 }
 .active {
     background-color: #00843d;
@@ -55,10 +129,13 @@ table, th, td {
 }
 .navbar .icon {
     display: none;
+    font-size: 1rem;
+    padding: 1.075rem;
 }
 .navbar a.active {
     background-color: #00843d;
     color: white;
+    padding: 1rem;
 }
 
 /*navbar drop menu*/
@@ -73,19 +150,15 @@ table, th, td {
     color: inherit;
     font-family: inherit;
     margin: 0;
-    font-size: 2vw;
-    padding: 2vw;
-}
-.navbar a:hover, .drop:hover .drop-button {
-    background-color: black;
-    color: #ffa300;
+    font-size: 1rem;
+    padding: 1rem;
 }
 .drop-content {
     display: none;
-    font-size: 2vw;
+    font-size: 1rem;
     position: absolute;
     background-color: #ffa300;
-    box-shadow: 0vw 1vw 2vw 0vw rgba(0,0,0,0.8);
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.8);
     z-index: 1;
 }
 .drop-content a {
@@ -94,9 +167,12 @@ table, th, td {
     text-decoration: none;
     display: block;
     text-align: center;
-    padding-left: 5.285vw;
-    padding-right: 5.285vw;
-
+    padding-left: 2.5rem;
+    padding-right: 2.75rem;
+}
+.navbar a:hover, .drop:hover .drop-button {
+    background-color: black;
+    color: #ffa300;
 }
 .drop-content a:hover {
     background-color: black;
@@ -105,23 +181,17 @@ table, th, td {
     display: block;
 }
 
-/*cards*/
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 /*contact form*/
 .container {
-    font-size: 2vw;
+    font-size: 2rem;
     font-weight: bolder;
     margin: 10%;
     width: 80%;
     background: #FFFFFF;
     color: #0033a0;
-    border-radius: 5px;
-    padding: 50px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.8);
 }
 .container .content {
     display: flex;
@@ -131,44 +201,44 @@ table, th, td {
 }
 .container .content .contactForm {
     width: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 .contactForm .userInputBox {
-    height: 5vh;
+    height: 5rem;
     width: 100%;
-    margin: 10vw 0px;
+    margin: 5rem 0;
 }
 .contactForm .userInputBox input,
 .contactForm .userInputBox textarea {
-    margin: 1vw 0;
+    margin: 1rem 0;
     height: 100%;
     width: 100%;
-    font-size: 2vw;
+    font-size: 1rem;
     background: #d7deda;
-    padding: 0px 5vh;
+    padding: 0 5rem;
     resize: none;
-    border-radius: 5px;
+    border-radius: 1rem;
     text-align: center;
 }
 .contactForm .textBox1 {
-    min-height: 350px;
+    min-height: 33rem;
 }
 .contactForm .textBox1 textarea {
-    padding-top: 10px;
+    padding-top: 10rem;
 }
 .contactForm .submitButton {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 2rem;
 }
 .contactForm .submitButton input[type="button"]{
     color: #FFFFFF;
-    margin-top: 5vh;
-    font-size: 2vw;
+    margin-top: 2rem;
+    font-size: 2rem;
     outline: none;
-    padding: 10px 15px;
+    padding: 1rem 1rem;
     background: #0033a0;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -181,11 +251,12 @@ table, th, td {
 #eMess {
     color: red;
     font-weight: bolder;
-    font-size: larger;
+    font-size: 1rem;
 }
 .popup {
     animation: blink 3s linear infinite;
 }
+
 /*responsiveness*/
 @media screen and (max-width: 800px) {
     .starNV {
@@ -193,12 +264,11 @@ table, th, td {
         position: relative;
         float: left;
     }
-    body {
-        background-color: #005a9c;
-
-    }
     .navbar {
-        font-size: 2vw;
+        font-size: 1vw;
+    }
+    #footer {
+        background-color: white;
     }
 }
 @media screen and (max-width: 800px) {
@@ -209,22 +279,15 @@ table, th, td {
         float: right;
         display: block;
     }
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        font-size: 2vw;
-      }
-    
-    .card {
-      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
-      padding: 25px 25px 0px 25px;
-      background-color: #d7deda;
-      height: fit-content;
-    }
+
 }
 @media screen and (max-width: 800px) {
-
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
     .navbar.responsive a {
       float: none;
       display: block;
@@ -243,12 +306,10 @@ table, th, td {
     .active {
         background-color: #00843d;
         color: white;
+        padding: 1vw;
     }
+}    
 
-    .navbar a.split {
-        float: left;
-    }
-}
 /*scroll to top function*/
 #topBtn {
     display: none;
